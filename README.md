@@ -1,6 +1,8 @@
 # Eventex
 
 Sistema de Eventos encomendado pela morena.
+[![Build Status](https://travis-ci.org/silviolleite/eventex.svg?branch=master)](https://travis-ci.org/silviolleite/eventex)
+[![Code Health](https://landscape.io/github/silviolleite/eventex/master/landscape.svg?style=flat)](https://landscape.io/github/silviolleite/eventex/master)
 
 ## Como desenvolver?
 
