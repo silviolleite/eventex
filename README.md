@@ -3,6 +3,7 @@
 Sistema de Eventos encomendado pela morena.
 [![Build Status](https://travis-ci.org/silviolleite/eventex.svg?branch=master)](https://travis-ci.org/silviolleite/eventex)
 [![Code Health](https://landscape.io/github/silviolleite/eventex/master/landscape.svg?style=flat)](https://landscape.io/github/silviolleite/eventex/master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d7c578fb4cdcef3555a7/maintainability)](https://codeclimate.com/github/silviolleite/eventex/maintainability)
 
 ## Como desenvolver?
 
