@@ -12,12 +12,12 @@ Class-based views
 Including another URLconf
     1. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.urls import path, include
-from django.contrib import admin
-from eventex.core.views import home
+from django.urls import path
+from eventex.subscriptions.views import new, detail
+
+app_name = 'subscriptions'
 
 urlpatterns = [
-    path('', home, name='home'),
-    path('inscricao/', include('eventex.subscriptions.urls')),
-    path('admin/', admin.site.urls),
+    path('', new, name='new'),
+    path('<int:pk>/', detail, name='detail'),
 ]
