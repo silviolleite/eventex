@@ -31,9 +31,32 @@ class SubscriptionFormTest(TestCase):
         form = self.make_validated_form(name='SILVIO luis')
         self.assertEqual('Silvio Luis', form.cleaned_data['name'])
 
+    def test_email_is_optional(self):
+        """Email must be optional"""
+        form = self.make_validated_form(email='')
+        self.assertFalse(form.errors)
+
+    def test_phone_is_optional(self):
+        """Phone must be optional"""
+        form = self.make_validated_form(phone='')
+        self.assertFalse(form.errors)
+
+    def test_must_inform_email_or_phone(self):
+        """Must inform email or phone"""
+        form = self.make_validated_form(email='', phone='')
+        self.assertListEqual(['__all__'], list(form.errors))
+
     def make_validated_form(self, **kwargs):
         valid = dict(name='Silvio Luis', cpf='12345678901', email='silviolleite@gmail.com', phone='12-121212122')
         data = dict(valid, **kwargs)
         form = SubscriptionForm(data)
         form.is_valid()
         return form
+
+
+class FormRegressionTest(TestCase):
+    def test_must_use_cleaned_data_get(self):
+        """Must use cleaned_data.get"""
+        invalid_data = dict(name='Silvio Luis', cpf='12345678901', email='asdf', phone='')
+        form = SubscriptionForm(invalid_data)
+        self.assertEqual(False, form.is_valid())
