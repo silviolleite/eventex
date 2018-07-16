@@ -4,9 +4,9 @@
     font-family: 'sinkin_sans200_x_light';
     src: url('../fonts/SinkinSans-200XLight-webfont.eot');
     src: url('../fonts/SinkinSans-200XLight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/SinkinSans-200XLight-webfont.woff') format('woff'),
-         url('../fonts/SinkinSans-200XLight-webfont.ttf') format('truetype'),
-         url('../fonts/SinkinSans-200XLight-webfont.svg#sinkin_sans200_x_light') format('svg');
+    url('../fonts/SinkinSans-200XLight-webfont.woff') format('woff'),
+    url('../fonts/SinkinSans-200XLight-webfont.ttf') format('truetype'),
+    url('../fonts/SinkinSans-200XLight-webfont.svg#sinkin_sans200_x_light') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -16,9 +16,9 @@
     font-family: 'sinkin_sans300_light';
     src: url('../fonts/SinkinSans-300Light-webfont.eot');
     src: url('../fonts/SinkinSans-300Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/SinkinSans-300Light-webfont.woff') format('woff'),
-         url('../fonts/SinkinSans-300Light-webfont.ttf') format('truetype'),
-         url('../fonts/SinkinSans-300Light-webfont.svg#sinkin_sans300_light') format('svg');
+    url('../fonts/SinkinSans-300Light-webfont.woff') format('woff'),
+    url('../fonts/SinkinSans-300Light-webfont.ttf') format('truetype'),
+    url('../fonts/SinkinSans-300Light-webfont.svg#sinkin_sans300_light') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -28,9 +28,9 @@
     font-family: 'sinkin_sans400_regular';
     src: url('../fonts/SinkinSans-400Regular-webfont.eot');
     src: url('../fonts/SinkinSans-400Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/SinkinSans-400Regular-webfont.woff') format('woff'),
-         url('../fonts/SinkinSans-400Regular-webfont.ttf') format('truetype'),
-         url('../fonts/SinkinSans-400Regular-webfont.svg#sinkin_sans400_regular') format('svg');
+    url('../fonts/SinkinSans-400Regular-webfont.woff') format('woff'),
+    url('../fonts/SinkinSans-400Regular-webfont.ttf') format('truetype'),
+    url('../fonts/SinkinSans-400Regular-webfont.svg#sinkin_sans400_regular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -40,9 +40,9 @@
     font-family: 'sinkin_sans600_semibold';
     src: url('../fonts/SinkinSans-600SemiBold-webfont.eot');
     src: url('../fonts/SinkinSans-600SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/SinkinSans-600SemiBold-webfont.woff') format('woff'),
-         url('../fonts/SinkinSans-600SemiBold-webfont.ttf') format('truetype'),
-         url('../fonts/SinkinSans-600SemiBold-webfont.svg#sinkin_sans600_semibold') format('svg');
+    url('../fonts/SinkinSans-600SemiBold-webfont.woff') format('woff'),
+    url('../fonts/SinkinSans-600SemiBold-webfont.ttf') format('truetype'),
+    url('../fonts/SinkinSans-600SemiBold-webfont.svg#sinkin_sans600_semibold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -52,9 +52,9 @@
     font-family: 'sinkin_sans700_bold';
     src: url('../fonts/SinkinSans-700Bold-webfont.eot');
     src: url('../fonts/SinkinSans-700Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/SinkinSans-700Bold-webfont.woff') format('woff'),
-         url('../fonts/SinkinSans-700Bold-webfont.ttf') format('truetype'),
-         url('../fonts/SinkinSans-700Bold-webfont.svg#sinkin_sans700_bold') format('svg');
+    url('../fonts/SinkinSans-700Bold-webfont.woff') format('woff'),
+    url('../fonts/SinkinSans-700Bold-webfont.ttf') format('truetype'),
+    url('../fonts/SinkinSans-700Bold-webfont.svg#sinkin_sans700_bold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -351,17 +351,27 @@ section header h2 {
 
 /* Fim Customização */
 .alert{
-            padding: 0 15px;
-            margin-bottom: 1rem;
-            border: 1px solid transparent;
-            border-radius: .25rem;
-        }
-        .alert p {
-            padding: 7px 0 7px;
-        }
+    padding: 0 15px;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.alert p {
+    padding: 7px 0 7px;
+}
 
-        .alert.success{
-            color: #3c763d;
-            background-color: #dff0d8;
-            border-color: #d0e9c6;
-        }
+.alert.success{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d0e9c6;
+}
+
+.speakers h2 {
+	text-transform: uppercase;
+}
+
+.speakers img {
+	width: 200px;
+	border-radius: 100%;
+}
+
