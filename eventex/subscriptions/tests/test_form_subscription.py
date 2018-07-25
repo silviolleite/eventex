@@ -10,10 +10,15 @@ class SubscriptionFormTest(TestCase):
         expected = ['name', 'cpf', 'email', 'phone']
         self.assertSequenceEqual(expected, list(form.fields))
 
+    def test_cpf_format_with_separator(self):
+        """CPF must accept xxx.xxx.xxx-xx"""
+        form = self.make_validated_form(cpf='111.111.111-11')
+        self.assertFalse(form.errors)
+
     def test_cpf_is_digit(self):
         """CPF must only accept digit"""
         form = self.make_validated_form(cpf='abc12345678')
-        self.assertFormErrorCode(form, 'cpf', 'digits')
+        self.assertFormErrorCode(form, 'cpf', 'format')
 
     def test_cpf_has_11_digits(self):
         """CPF must have 11 digits"""
